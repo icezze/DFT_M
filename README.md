@@ -1,7 +1,9 @@
-DFT_M 代码仓库
-项目简介 / Project Introduction
+#DFT_M 
+
+
 本仓库包含 DFT_M 项目相关的代码文件。所有代码均使用 Python、MATLAB 等编程语言编写，旨在为相关领域的研究和应用提供工具和参考实现。
 This repository contains code files related to the DFT_M project. All code is written in programming languages such as Python and MATLAB, aiming to provide tools and reference implementations for research and applications in related fields.
+
 作者（Author）希望代码能够被免费、公开地使用、修改和分发。
 如果您有任何问题、建议或改进意见，欢迎通过以下方式联系：
 The author intends the code to be used, modified, and distributed freely and openly. 

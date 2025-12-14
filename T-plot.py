@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 #用于处理AIMD计算中的温度并按步长绘图，读取VASP的过程日志文件runlog（请根据时间计算环境更改文件名，可替换为OSZICAR）
+
 import re, sys, pathlib, numpy as np, matplotlib.pyplot as plt
 
 # --- 1. command-line input ---

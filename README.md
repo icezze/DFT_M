@@ -1,4 +1,4 @@
-******#DFT_M******
+**DFT_M**
 
 本仓库包含 DFT_M 项目相关的代码文件。所有代码均使用 Python、MATLAB 等编程语言编写，旨在为相关领域的研究和应用提供工具和参考实现。
 
@@ -17,7 +17,7 @@ If you have any questions, suggestions, or improvements, please feel free to con
 微信公众号/WeChat Official Account: DFT计算杂谈
 
 
-**#重要提醒 / Important Notice**
+**重要提醒 / Important Notice**
 
 **环境适配 / Environment Adaptation**
 

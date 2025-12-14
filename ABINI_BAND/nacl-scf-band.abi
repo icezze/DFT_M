@@ -1,0 +1,64 @@
+ 
+ndtset 2
+
+ecut 25    
+#Definition of the SCF procedure
+nstep1 20          
+diemac1 12.0       
+
+#Dataset 1 
+kptopt1 1 
+#nshiftk1 4
+#shiftk1  0 0 0   
+ngkpt1 9 9 9
+prtden1  1
+ nshiftk 1
+shiftk 0.5 0.5 0.5
+toldfe1 1.0d-7   # 能量收敛阈值（Ha）
+nband1   18
+
+ #Dataset 2 : the band structure
+iscf2    -2
+getden2  -1
+kptopt2  -3 
+nband2   18
+ndivsm2   20  
+kptbounds2    0.00000   0.00000   0.00000  # $\Gamma$
+              0.50000   0.00000   0.50000  # X
+              0.50000   0.25000   0.75000  # W
+              0.37500   0.37500   0.75000  # K
+              0.00000   0.00000   0.00000  # $\Gamma$
+              0.50000   0.50000   0.50000  # L
+              0.62500   0.25000   0.62500  # U
+              0.50000   0.25000   0.75000  # W
+              0.50000   0.50000   0.50000  # L
+              0.37500   0.37500   0.75000  # K
+              0.62500   0.25000   0.62500  # U
+              0.50000   0.00000   0.50000  # X
+
+toldfe2 1.0d-7  
+enunit2  1             # Will output the eigenenergies in eV
+ 
+ chksymbreak 0
+ tolwfr2  1.0d-7   # 或 1.0d-8、1.0d-10，按精度需求
+ 
+ 
+ tolsym 1.0d-8  
+ 
+ # Abinit Structure
+ natom 2
+ ntypat 2
+ typat 1 2
+ znucl 11 17
+ xred
+    0.0000000000    0.0000000000    0.0000000000
+    0.5000000000    0.5000000000    0.5000000000
+ acell    1.0    1.0    1.0
+ rprim
+    0.0000000000    5.3421275272    5.3421275272
+    5.3421275272    0.0000000000    5.3421275272
+    5.3421275272    5.3421275272    0.0000000000
+
+    
+pp_dirpath "/public/data/luo_x/liwh225/software/abinit-10.4.7/psdir/nc-sr-05_pbe_standard_psp8/"                                  
+pseudos "Na.psp8 ,Cl.psp8" 
